@@ -1,0 +1,183 @@
+body {
+  background: #fff;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+::selection {
+  background: #69D2E7;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #69D2E7;
+  color: #fff;
+}
+
+#first {
+  color: #fff;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #633F3F;
+  padding: 0 20px;
+}
+
+#first figure {
+  margin: 0;
+  text-align: center;
+}
+
+#first svg {
+  width: 107px;
+  height: 93px;
+}
+
+#first figcaption {
+  font-size: 17px;
+  letter-spacing: 0.49px;
+  line-height: 26px;
+  margin-top: 35px;
+}
+
+#first aside {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+#first aside a {
+  color: #fff;
+  text-decoration: none;
+  background: #5B3A3A;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 16px 43px;
+  display: inline-block;
+}
+
+#second {
+  color: #633F3F;
+  padding: 0 20px 20px;
+}
+
+#second p {
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.42px;
+}
+
+#second h2 {
+  margin-top: 40px;
+}
+
+#second .bookmark {
+  display: block;
+  width: 45px;
+  height: 80px;
+  margin-bottom: 50px;
+  background: #633F3F url('../images/triangle-mobile.svg') no-repeat center bottom;
+}
+
+#third {
+  display: none;
+}
+
+#fourth {
+  background: #F2F2F2;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+#fourth a {
+  display: inline-block;
+  text-decoration: none;
+  background: #E78469;
+  padding: 15px 20px;
+  border-radius: 7px;
+  color: #fff;
+  transition: background .4s;
+}
+
+#fourth a:hover {
+  background: #d1785f;
+}
+
+#fourth p {
+  color: #949494;
+  line-height: 28px;
+  margin-bottom: 26px;
+}
+
+@media (min-width: 768px) {
+
+  #first figure {
+    width: 400px;
+  }
+
+  #first aside a {
+    transition: .3s ease;
+    color: #d5d5d5;
+  }
+
+  #first aside a:hover {
+    color: #fff;
+    padding-bottom: 25px;
+  }
+
+  #second {
+    width: 750px;
+    margin: auto;
+  }
+
+  #second p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  #third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 80px;
+    background: #F2F2F2;
+    padding: 20px;
+  }
+
+  #third ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  #third li {
+    text-align: center;
+  }
+
+  #third img {
+    display: inline-block;
+    max-width: 800px;
+    max-height: 80vh;
+    border: 1px solid #E0E0E0;
+  }
+
+  #fourth {
+    background: #fff;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+
+}

@@ -2,22 +2,74 @@
 layout: default
 ---
 
-<div class="home">
+<section id="first">
 
-  <h1 class="page-heading">Posts</h1>
+  <figure>
+    <svg width="176px" height="145px" viewBox="0 0 176 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+        <g id="Muffin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <g id="Logo" sketch:type="MSLayerGroup" fill="#FFFFFF">
+                <path d="M130.769692,131.684167 C132.122154,130.217552 133.149359,128.414115 134.165974,126.711875 C135.816462,123.943281 137.351974,121.105208 138.861769,118.256563 C142.716436,110.983906 146.37141,103.605521 150.024872,96.2301563 C141.404821,99.0410417 132.023821,99.5002083 123.154154,97.6272917 C121.096718,97.1922917 119.065,96.6304167 117.075641,95.9446875 C116.098359,95.6078646 115.131667,95.2393229 114.177077,94.8420833 C113.104487,95.3480729 112.016769,95.8238542 110.918462,96.2679167 C106.895872,97.8901042 102.702333,99.0833333 98.431641,99.8400521 C89.5907179,101.406354 80.4063846,101.120885 71.6864872,98.9730729 C67.5307692,97.9490104 63.4794359,96.5020313 59.6247692,94.6411979 C58.7185897,94.2046875 57.8260256,93.7455208 56.9440513,93.2636979 C55.9153333,93.5778646 54.8790513,93.8603125 53.8321795,94.1080208 C51.5175641,94.6578125 49.1636154,95.0459896 46.7945385,95.2725521 C39.7205897,95.9507292 32.5074615,95.2045833 25.7421282,93.0175 C29.5483846,100.708542 33.3440513,108.407135 37.3167179,116.013594 C39.9732308,121.099167 42.5223333,126.65901 46.1425128,131.158542 C51.2861026,137.555156 60.124,140.844844 67.8499744,142.71776 C76.2975641,144.765885 85.0537692,145.148021 93.6677692,144.823281 C100.414949,144.569531 107.172718,143.602865 113.623385,141.575885 C119.931846,139.594219 126.231231,136.615677 130.769692,131.684167 C134.193205,127.967031 128.116205,134.567552 130.769692,131.684167 L130.769692,131.684167 Z" id="Bottom" sketch:type="MSShapeGroup"></path>
+                <path d="M0.196641026,51.6154687 C0.196641026,68.6559896 13.7000769,82.1938542 29.5105641,86.4955208 C38.0186667,88.8109896 47.1576154,88.63125 55.581,86.0454167 C56.069641,85.8958854 57.2420769,85.2675521 57.7019744,85.5182812 C58.7685128,86.0982812 59.829,86.6903646 60.9121795,87.2416667 C64.8364359,89.2384375 68.9997179,90.7579167 73.281,91.7880208 C82.0841026,93.905625 91.3743333,93.9615104 100.206179,91.9707812 C104.30441,91.0464062 108.296744,89.6779687 112.089385,87.8760417 C112.562897,87.6509896 113.724744,86.7991146 114.222462,87.0060417 C115.399436,87.4984375 116.571872,88.0059375 117.767,88.4530208 C134.214385,94.6109896 154.343974,90.8364583 166.366359,77.7064062 C176.760949,66.3586458 178.514308,49.5794271 170.018308,36.6578125 C162.378564,25.0427083 148.599795,18.6219271 134.896667,18.3651562 C133.406538,18.3364583 131.917923,18.3923437 130.430821,18.4875 C129.568513,18.5433854 128.792436,18.8469792 128.173692,18.2171354 C125.966487,15.9741667 123.710872,13.8157812 121.187487,11.9217187 C114.782205,7.11104167 107.281641,3.82135417 99.4512821,2.156875 C83.3382308,-1.27177083 65.7577436,2.15989583 52.6325128,12.2615625 C51.6401026,13.0258333 50.6870256,13.8354167 49.7384872,14.6525521 C48.9412308,15.3428125 48.8338205,15.5965625 47.8141795,15.4953646 C44.4511795,15.1630729 41.1017949,15.0090104 37.7282051,15.2944792 C30.9825385,15.8654167 24.3594103,17.9059896 18.5335385,21.3663542 C7.83638462,27.713125 0.196641026,38.9566667 0.196641026,51.6154687 L0.196641026,51.6154687 Z" id="Top" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </svg>
+    <figcaption>The 21st century way of building websites with dynamic contents.</figcaption>
+  </figure>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <aside>
+    <a href="#second">read more</a>
+  </aside>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<section id="second">
 
-</div>
+    <a href="#first" class="bookmark"></a>
+
+    <article>
+      <h1>First off: Let’s be honest.</h1>
+
+      <p><b>Muffin isn’t a new invention.</b> Rather than that, it takes the essence of the brilliant idea that brought us content management systems like WordPress, Kirby, Typo3 and Drupal and merges it with the latest technologies and tools that the web has to offer today.</p>
+      <p>The current market in this area is a mess. People keep struggling with spaghetti code, quirky build &amp; deployment workflows, cluttered dashboards, weird caching mechanisms and uncompressed images. Muffin solves all of this:</p>
+
+      <h2>JavaScript</h2>
+      <p>Since Muffin is written in pure JavaScript and will run on Node.js, you’ll also finally be able to take advantage of a much faster content delivery, build tools like Grunt &amp; Gulp and all other packages available within the JavaScript universe.</p>
+
+      <h2>Farewell, spaghetti code</h2>
+      <p>The app ships with Handlebars as its default templating engine. You’ll finally be able to enjoy the convenience of completely logic-less templates and the clean code that comes with them.</p>
+
+      <h2>Flexible contents</h2>
+      <p>Most of the new content management systems of today never really find their way into the workflow of big advertising agencies and other well-established organizations. This is mostly due to the fact that most of them simply can’t handle all of the stuff that needs to be done in the everyday business.</p>
+
+      <p>Muffin thrives to be one of those that won’t be stamped as “Cool! But sadly not flexible enough for us…” by providing developers with straightforward UI that can handle all types of content structures.</p>
+
+      <h2>Anything else?</h2>
+      <p>Oh. You’re right! Before I forget it: Muffin will be open source. And it will be available on GitHub (not like many other ones why are versioned with SVN and then mirrored in a weird way).</p>
+    </article>
+
+</section>
+
+<section id="third">
+  <div id="slider">
+    <ul>
+      <!--<li><img src="shots/dashboard.png"></li>-->
+      <li><img src="/assets/images/dashboard-mobile.png"></li>
+      <!--<li><img src="shots/login.png"></li>-->
+      <li><img src="/assets/images/login-mobile.png"></li>
+      <!--<li><img src="shots/media.png"></li>-->
+      <li><img src="/assets/images/media-mobile.png"></li>
+      <!--<li><img src="shots/overlay.png"></li>-->
+      <li><img src="/assets/images/overlay-mobile.png"></li>
+      <!--<li><img src="shots/page.png"></li>-->
+      <!--<li><img src="shots/page-2.png"></li>-->
+      <li><img src="/assets/images/page-mobile.png"></li>
+    </ul>
+  </div>
+</section>
+
+<section id="fourth">
+  <main>
+    <p>If that sounds interesting to you, make sure to join our mailing list:</p>
+    <a href="http://eepurl.com/bOmPiH" target="_blank">Keep me updated!</a>
+  </main>
+</section>
