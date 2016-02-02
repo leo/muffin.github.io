@@ -1,7 +1,9 @@
 $(document).ready(function () {
-  $('a[href="#second"]').click(function (event) {
+  $('a[href^="#"]').click(function (event) {
+    var target = $(this).attr('href')
+
     $('html, body').animate({
-      scrollTop: $('#second').offset().top
+      scrollTop: $(target).offset().top
     }, 600)
 
     event.preventDefault()
