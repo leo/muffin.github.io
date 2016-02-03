@@ -34,18 +34,21 @@ layout: default
 
       <h2>JavaScript</h2>
       <p>Since Muffin is written in pure JavaScript and run on Node.js, you’ll also finally be able to take advantage of a much faster content delivery, build tools like Grunt &amp; Gulp and all other packages available within the JavaScript universe.</p>
+
+      <h3>Stop diggin'</h3>
       <p>This also has many other advantages: For example, Muffin acts as a simple module that will be part of your site's dependencies. This basically means that your template files will be located in the root directory. So all in all, you won't have to dig 10 folders deep into your folder structure anymore, just to reach it (or your plugins).</p>
 
+      <h3>Build-in webserver</h3>
       <p>Another great thing that comes with the use of the Muffin is the abilitiy to finally say "goodbye" to <code>php.ini</code>, <code>.htaccess</code> and differently configured webserver setups. Muffin comes with its own JS webserver built-in, so there's no need to waste your time endlessly configuring upload limits, max. execution times, webserver modules or stupid RewriteRules.</p>
       <p>You also don't need to install things like <code>mod_deflate.c</code> or <code>mod_expires.c</code> and then setup quirky <code>.htaccess</code> rules, just to compress your responses or to set the correct expiration date for certain media files. Muffin already internally handles all of this stuff for you. Just lean back and focus on writing a great website!</p>
 
-      <h2>Document-oriented</h2>
+      <h2>Document-oriented DB</h2>
       <p>By using <a href="https://www.mongodb.org" target="_blank">MongoDB</a> for storing your data, we make sure to both store your content in a carefully structured way and serve it in the glimpse of an eye. Besides of that, it also allows you to take advantage of all those special features MongoDB has to offer:</p>
       <p>Since all data is already structured in BSON objects (basically binary-encoded JSON documents), it's very straightforward to output them as such. This means that you can easily export your whole DB as a single JSON file. Since it's really just JSON, the file can now either be re-imported into a different DB, or even loaded into a simple JS script (without a library), if you want to iterate over your data.</p>
 
       <h3>GridFS</h3>
       <p>Do you remember the times when you had to make sure that all folder and file permissions are configured correctly, just to make sure your media files are stored?</p>
-      <p><b>Forget that!</b> Muffin uses <a href="https://docs.mongodb.org/manual/core/gridfs/">GridFS</a> to split all of your uploaded files into small 255 kB chunks and saves them to the DB (not the code, of course). When a request for a file comes in, the chunks will be taken from the DB and then <a href="http://maxogden.com/node-streams.html" target="_blank">streamed</a> directly to the response.</p>
+      <p>Forget that! Muffin uses <a href="https://docs.mongodb.org/manual/core/gridfs/">GridFS</a> to split all of your uploaded files into small 255 kB chunks and saves them to the DB (not the code, of course). When a request for a file comes in, the chunks will be taken from the DB and then <a href="http://maxogden.com/node-streams.html" target="_blank">streamed</a> directly to the response.</p>
       <p>A nice side-effect of this whole feature is that you don't need to download a <code>uploads</code> folder or such stuff when setting up your local development environment. <b>Just copy the DB!</b></p>
 
       <h2>Made for uniqueness</h2>
