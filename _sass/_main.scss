@@ -83,7 +83,24 @@ body {
 
 #second {
   color: #633F3F;
-  padding: 0 20px 20px;
+  padding: 0 20px 40px;
+
+  code {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 0.2em 0.6em;
+    font-size: 13px;
+    border-radius: 3px;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.37);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
 
   p {
     font-size: 14px;
@@ -95,6 +112,13 @@ body {
       line-height: 28px;
     }
 
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    margin: 50px auto;
+    width: 70%;
   }
 
   h2 {
