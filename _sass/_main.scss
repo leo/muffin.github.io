@@ -124,6 +124,10 @@ body {
 
   h2 {
     margin-top: 40px;
+
+    @media (min-width: $sm) {
+      margin-top: 60px;
+    }
   }
 
   .bookmark {
