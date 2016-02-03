@@ -2,8 +2,5 @@ title: Muffin
 description: The 21st century way of building websites with dynamic contents.
 url: http://leo.im/muffin
 
-# Build settings
-markdown: kramdown
-
 sass:
   style: :compressed
