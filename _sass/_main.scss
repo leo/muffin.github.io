@@ -180,20 +180,32 @@ body {
 
 #fourth {
   background: #F2F2F2;
-  padding: 50px 40px;
+  padding: 70px 40px;
   text-align: center;
 
   a {
-    display: inline-block;
     text-decoration: none;
-    background: #E78469;
-    padding: 15px 20px;
-    border-radius: 7px;
-    color: #fff;
-    transition: background .4s;
+    font-weight: 600;
+    color: inherit;
 
     &:hover {
-      background: #d1785f;
+      color: #686868;
+    }
+
+    &[href*="ee"] {
+      display: inline-block;
+      text-decoration: none;
+      background: #69D2E7;
+      padding: 15px 20px;
+      border-radius: 5px;
+      color: #fff;
+      margin-top: 25px;
+      font-weight: normal;
+      transition: background .4s;
+
+      &:hover {
+        background: #9e9a9c;
+      }
     }
   }
 
@@ -201,13 +213,37 @@ body {
     color: #949494;
     line-height: 28px;
     margin-bottom: 26px;
+    margin-top: 0;
+
+    @media (min-width: $md) {
+      max-width: 570px;
+    }
+  }
+
+  iframe {
+    margin-bottom: -5px;
+    margin-left: 4px;
+    margin-right: 3px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
   }
 
   @media (min-width: $sm) {
     background: #fff;
-    height: 50vh;
+    min-height: 70vh;
+    padding: 0 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (min-width: $md) {
+    padding: 0;
+
+    main {
+      background: #fafafa;
+      padding: 30px;
+      margin: 50px 0;
+    }
   }
 }
