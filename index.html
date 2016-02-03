@@ -33,26 +33,28 @@ layout: default
       <p>The current market in this area is a mess. People keep struggling with spaghetti code, quirky build &amp; deployment workflows, cluttered dashboards, weird caching mechanisms and uncompressed contents. Muffin solves all of this:</p>
 
       <h2>JavaScript</h2>
-      <p>Since Muffin is written in pure JavaScript and will run on Node.js, you’ll also finally be able to take advantage of a much faster content delivery, build tools like Grunt &amp; Gulp and all other packages available within the JavaScript universe.</p>
-      <p>This also has many other advantages: For example, Muffin acts as a simple module that will be part of your site's dependencies. This basically means that your template files will be located in the root directory. So all in all, you <b>won't have to</b> dig 10 folders deep into a your folder structure anymore, just to reach it (or your plugins).</p>
+      <p>Since Muffin is written in pure JavaScript and run on Node.js, you’ll also finally be able to take advantage of a much faster content delivery, build tools like Grunt &amp; Gulp and all other packages available within the JavaScript universe.</p>
+      <p>This also has many other advantages: For example, Muffin acts as a simple module that will be part of your site's dependencies. This basically means that your template files will be located in the root directory. So all in all, you won't have to dig 10 folders deep into your folder structure anymore, just to reach it (or your plugins).</p>
 
-      <p>Another great thing that comes with the use of the Muffin is the abilitiy to finally say goodbye to <code>php.ini</code>, <code>.htaccess</code> and differently configured webserver setups. Muffin comes with its own JS webserver built-in, so there's no need to waste your time endlessly configuring upload limits, max execution times, webserver modules or stupid RewriteRules.</p>
-      <p>You also don't need to install things like <code>mod_deflate.c</code> or <code>mod_expires.c</code> and then setup quirky <code>.htaccess</code> rules, just to compress your respones and set the correct expiration date for certain media files. Muffin already internally handles all of this stuff for you. Just lean back and focus on writing a great website!</p>
+      <p>Another great thing that comes with the use of the Muffin is the abilitiy to finally say "goodbye" to <code>php.ini</code>, <code>.htaccess</code> and differently configured webserver setups. Muffin comes with its own JS webserver built-in, so there's no need to waste your time endlessly configuring upload limits, max. execution times, webserver modules or stupid RewriteRules.</p>
+      <p>You also don't need to install things like <code>mod_deflate.c</code> or <code>mod_expires.c</code> and then setup quirky <code>.htaccess</code> rules, just to compress your responses or to set the correct expiration date for certain media files. Muffin already internally handles all of this stuff for you. Just lean back and focus on writing a great website!</p>
 
       <h2>Document-oriented</h2>
       <p>By using <a href="https://www.mongodb.org" target="_blank">MongoDB</a> for storing your data, we make sure to both store your content in a carefully structured way and serve it in the glimpse of an eye. Besides of that, it also allows you to take advantage of all those special features MongoDB has to offer:</p>
-      <p>Since all data is already structured in BSON (basically binary-encoded JSON documents) objects, it's very straightforward to output them as such. This means that you can easily export your whole DB as a single JSON file. Since it's really just JSON, the file can now either be re-imported into a different DB, or even loaded into a simple JS script (without a library), if you want to iterate over your data.</p>
-      <p>Also: Do you remember the times when you had to make sure that all folder and file permissions are configured correctly, just to make sure your media files are stored?</p>
-      <p><b>Forget that!</b> Muffin uses <a href="https://docs.mongodb.org/manual/core/gridfs/">GridFS</a> to split all of your uploaded files into small 255 kB chunks and saves them to the DB (not the code, of course). When a request for a file comes in, the chunks will be taken from the DB and then <a href="https://nodejs.org/api/stream.html" target="_blank">streamed</a> directly to the response.</p>
-      <p>A nice side-effect of this whole feature is, that you don't need to download a <code>uploads</code> folder or such stuff when setting up your local development environment. Just copy the DB!</p>
+      <p>Since all data is already structured in BSON objects (basically binary-encoded JSON documents), it's very straightforward to output them as such. This means that you can easily export your whole DB as a single JSON file. Since it's really just JSON, the file can now either be re-imported into a different DB, or even loaded into a simple JS script (without a library), if you want to iterate over your data.</p>
+
+      <h3>GridFS</h3>
+      <p>Do you remember the times when you had to make sure that all folder and file permissions are configured correctly, just to make sure your media files are stored?</p>
+      <p><b>Forget that!</b> Muffin uses <a href="https://docs.mongodb.org/manual/core/gridfs/">GridFS</a> to split all of your uploaded files into small 255 kB chunks and saves them to the DB (not the code, of course). When a request for a file comes in, the chunks will be taken from the DB and then <a href="http://maxogden.com/node-streams.html" target="_blank">streamed</a> directly to the response.</p>
+      <p>A nice side-effect of this whole feature is that you don't need to download a <code>uploads</code> folder or such stuff when setting up your local development environment. <b>Just copy the DB!</b></p>
 
       <h2>Made for uniqueness</h2>
-      <p>Muffin will neither come with a built-in theme registry, nor something similar. The only way to extend its functionality will be by hooking up to its API when writing a site with it, or by using one of the plugins that will be released on <a href="https://www.npmjs.com" target="_blank">npm</a>.</p>
-      <p>All in all, this will create a much cleaner experience for your customers. Not only because those plugins are strictly limited when comes to the extension of the interface, but also because the open source community will focus on sharing so-called "boilerplates" instead of entire themes.</p>
-      <p>Each boilerplate comes a different build system, pre-processors and methods. Simply choose the one you like the most, or use the default one, or just create your own! By the way, the default one comes with Gulp, Sass, Babel and built-in livereloading.</p>
+      <p>Muffin neither comes with a built-in theme registry, nor something similar. The only way to extend its functionality will be by hooking up to its API when writing a site with it, or by using one of the plugins that will be released on <a href="https://www.npmjs.com" target="_blank">npm</a>.</p>
+      <p>All in all, this will create a much cleaner experience for your customers. Not only because those plugins are strictly limited when it comes to the extension of the UI, but also because the open source community will focus on sharing so-called "boilerplates" instead of entire themes.</p>
+      <p>Each boilerplate comes with a different build system and preprocessor. Either choose the one you like the most, use the default one, or just create your own! By the way, the default one comes with Gulp, Sass, Babel and built-in livereloading.</p>
 
       <h2>Farewell, spaghetti code</h2>
-      <p>Since the app ships with <a href="http://handlebarsjs.com" target="_blank">Handlebars</a> as its default templating engine, you’ll finally be able to enjoy the convenience of completely logic-less templates and the clean code that comes with them. All of your helpers/functions will be located in a separate file.</p>
+      <p>Since the app ships with <a href="http://handlebarsjs.com" target="_blank">Handlebars</a> as its default templating engine, you’ll finally be able to enjoy the beauty of completely logic-less templates and the clean code that comes with them. All of your helpers and functions will be located in a separate file.</p>
 
       <h2>Flexible contents</h2>
       <p>Most of the new content management systems of today never really find their way into the workflow of big advertising agencies and other well-established organizations. This is mostly due to the fact that most of them simply can’t handle all of the stuff that needs to be done in the everyday business.</p>
@@ -60,7 +62,7 @@ layout: default
       <p>Muffin thrives to be one of those that won’t be stamped as “Cool! But sadly not flexible enough for us…” by providing developers with straightforward UI that can handle all types of content structures.</p>
 
       <h2>Anything else?</h2>
-      <p>There's much more exciting stuff about this project. So get ready for the release by <a href="#fourth">staying tuned</a>! Oh. And it will be open source, of course. And available on GitHub (not like many other ones why are versioned with SVN and then mirrored in a weird way).</p>
+      <p>There's much more exciting stuff about this project. So get ready for the release by <a href="#fourth">staying tuned</a>! Oh. And it will be open source, of course. And available on GitHub (not like many other ones that are versioned with SVN and then mirrored in a weird way).</p>
 
       <aside>
         <hr>
