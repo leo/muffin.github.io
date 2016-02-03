@@ -124,10 +124,6 @@ body {
 
   h2 {
     margin-top: 40px;
-
-    @media (min-width: $sm) {
-      margin-top: 60px;
-    }
   }
 
   .bookmark {
@@ -142,6 +138,14 @@ body {
     width: 750px;
     margin: auto;
     padding-bottom: 80px;
+
+    h2 {
+      margin-top: 60px;
+    }
+
+    h3 {
+      margin-top: 40px;
+    }
   }
 }
 
