@@ -32,19 +32,11 @@ body {
     @media (min-width: $sm) {
       width: 400px;
     }
-
   }
 
   svg {
     width: 107px;
     height: 93px;
-  }
-
-  figcaption {
-    font-size: 17px;
-    letter-spacing: 0.49px;
-    line-height: 26px;
-    margin-top: 35px;
   }
 
   aside {
@@ -72,18 +64,29 @@ body {
           color: #fff;
           padding-bottom: 25px;
         }
-
       }
-
     }
-
   }
 
+  figcaption {
+    font-size: 17px;
+    letter-spacing: 0.49px;
+    line-height: 26px;
+    margin-top: 35px;
+  }
 }
 
 #second {
   color: #633F3F;
   padding: 0 20px 40px;
+
+  aside {
+    display: none;
+
+    @media (min-width: $md) {
+      display: block;
+    }
+  }
 
   code {
     background-color: rgba(0, 0, 0, 0.04);
@@ -99,7 +102,6 @@ body {
     &:hover {
       text-decoration: underline;
     }
-
   }
 
   p {
@@ -111,7 +113,6 @@ body {
       font-size: 16px;
       line-height: 28px;
     }
-
   }
 
   hr {
@@ -138,7 +139,6 @@ body {
     margin: auto;
     padding-bottom: 80px;
   }
-
 }
 
 #third {
@@ -167,9 +167,7 @@ body {
       max-height: 80vh;
       border: 1px solid #E0E0E0;
     }
-
   }
-
 }
 
 #fourth {
@@ -189,7 +187,6 @@ body {
     &:hover {
       background: #d1785f;
     }
-
   }
 
   p {
@@ -205,5 +202,4 @@ body {
     justify-content: center;
     align-items: center;
   }
-
 }
