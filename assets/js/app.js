@@ -13,4 +13,10 @@ $(document).ready(function () {
     nav: false,
     arrows: false
   })
+
+  $('#third').snapPoint({
+    scrollSpeed: 150,
+    outerTopOffset: 200,
+    innerTopOffset: 200
+  })
 })

@@ -112,6 +112,7 @@ body {
   @media (min-width: $sm) {
     width: 750px;
     margin: auto;
+    padding-bottom: 80px;
   }
 
 }
@@ -124,7 +125,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: 80px;
     background: #F2F2F2;
     padding: 20px;
 
