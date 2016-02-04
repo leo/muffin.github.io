@@ -84,14 +84,6 @@ body {
   color: #633F3F;
   padding: 0 20px 40px;
 
-  aside {
-    display: none;
-
-    @media (min-width: $md) {
-      display: block;
-    }
-  }
-
   code {
     background-color: rgba(0, 0, 0, 0.04);
     padding: 0.2em 0.6em;
