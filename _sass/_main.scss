@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background: #fff;
   margin: 0;
@@ -17,7 +21,7 @@ body {
 
 #first {
   color: #fff;
-  height: 100vh;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   display: flex;
   align-items: center;
