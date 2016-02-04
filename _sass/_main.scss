@@ -150,36 +150,7 @@ body {
 }
 
 #third {
-  display: none;
-
-  @media (min-width: $sm) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #F2F2F2;
-
-    ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    li {
-      text-align: center;
-    }
-
-    img {
-      display: inline-block;
-      max-width: 800px;
-      max-height: 80vh;
-      border: 1px solid #E0E0E0;
-    }
-  }
-}
-
-#fourth {
-  background: #F2F2F2;
+  background: #fafafa;
   padding: 70px 40px;
   text-align: center;
 
@@ -229,8 +200,7 @@ body {
   }
 
   @media (min-width: $sm) {
-    background: #fff;
-    min-height: 70vh;
+    min-height: 60vh;
     padding: 0 50px;
     display: flex;
     justify-content: center;
@@ -241,7 +211,6 @@ body {
     padding: 0;
 
     main {
-      background: #fafafa;
       padding: 30px;
       margin: 50px 0;
     }
