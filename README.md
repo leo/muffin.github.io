@@ -1,16 +1,10 @@
 # Caught a bug?
 
-Clone it
+Clone the repo
 
 ```sh
-git clone https://github.com/leo/muffin.git
-```
-
-Switch to the `gh-pages` branch
-
-```sh
-cd muffin
-git checkout gh-pages
+git clone https://github.com/small-cake/small-cake.github.io.git
+cd small-cake.github.io
 ```
 
 Install Jekyll and a special gem from GitHub
