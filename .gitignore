@@ -1,11 +1,4 @@
-# compiled output
 _site
-.sass-cache
+
 .jekyll-metadata
-dist
-
-# dependencies
-node_modules
-
-# logs
-npm-debug.log
+.sass-cache
