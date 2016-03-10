@@ -147,7 +147,7 @@ body {
 
 #third {
   background: #fafafa;
-  padding: 70px 40px;
+  padding: 70px 30px;
   text-align: center;
 
   a {
@@ -157,22 +157,6 @@ body {
 
     &:hover {
       color: #686868;
-    }
-
-    &[href*="ee"] {
-      display: inline-block;
-      text-decoration: none;
-      background: #69D2E7;
-      padding: 15px 20px;
-      border-radius: 5px;
-      color: #fff;
-      margin-top: 25px;
-      font-weight: normal;
-      transition: background .4s;
-
-      &:hover {
-        background: #9e9a9c;
-      }
     }
   }
 
@@ -193,6 +177,34 @@ body {
     margin-right: 3px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+  }
+
+  .button-group {
+    margin-top: 50px;
+
+    a {
+      text-decoration: none;
+      background: #69D2E7;
+      padding: 15px 20px;
+      border-radius: 5px;
+      color: #fff;
+      margin-top: 15px;
+      font-weight: normal;
+      display: block;
+      transition: background .4s;
+
+      &:hover {
+        background: #9e9a9c;
+      }
+
+      &:last-child {
+        background: #ff9279;
+
+        &:hover {
+          background: #be6d5a;
+        }
+      }
+    }
   }
 
   @media (min-width: $sm) {
