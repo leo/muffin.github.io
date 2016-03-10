@@ -213,6 +213,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .button-group a {
+      display: inline-block;
+      margin: 0 10px;
+    }
   }
 
   @media (min-width: $md) {
