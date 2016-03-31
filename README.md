@@ -3,8 +3,8 @@
 Clone the repo
 
 ```sh
-git clone https://github.com/small-cake/small-cake.github.io.git
-cd small-cake.github.io
+git clone https://github.com/muffin-cms/muffin-cms.github.io.git
+cd muffin-cms.github.io
 ```
 
 Install Jekyll and a special gem from GitHub
