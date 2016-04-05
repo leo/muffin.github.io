@@ -148,4 +148,38 @@ body {
     padding: 13px 0;
     margin-bottom: 40px;
   }
+
+  p {
+    line-height: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #F68484;
+    letter-spacing: 0.35px;
+    font-weight: 500;
+    margin-top: 40px;
+  }
+
+  a {
+    color: #F68484;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 4px 0;
+
+      &:before {
+        content: '\2014';
+        color: #696969;
+        margin-right: 10px;
+      }
+    }
+  }
 }
