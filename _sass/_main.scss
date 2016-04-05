@@ -1,6 +1,13 @@
+html, body {
+  margin: 0;
+
+  &.no-overflow {
+    overflow: hidden;
+  }
+}
+
 body {
   background: #F1F1F1;
-  margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #696969;
   font-size: 15px;
@@ -9,21 +16,34 @@ body {
 
 #controls {
   background: #fff;
-  padding: 20px 25px;
+  padding: 0 20px;
   box-sizing: border-box;
   display: flex;
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s box-shadow;
+  box-shadow: 0px 1px 4px 0px rgba(220,220,220,0.9);
+
+  .no-overflow & {
+    box-shadow: none;
+  }
 
   span {
     width: 50%;
-    display: block;
+    display: flex;
     font-size: 0;
+    height: 70px;
+    align-items: center;
 
     &:first-child {
-      text-align: left;
+      justify-content: flex-start;
     }
 
     &:last-child {
-      text-align: right;
+      justify-content: flex-end;
     }
   }
 
@@ -32,31 +52,92 @@ body {
   }
 
   .toggle {
-    width: 30px;
     vertical-align: -26px;
+    width: 30px;
 
     b {
       width: inherit;
       display: block;
       height: 2px;
       background: #221E20;
+      transition: 0.3s all;
+      -webkit-transition: 0.3s all;
 
       &:nth-child(2) {
         margin: 6px 0;
       }
     }
+
+    .no-overflow & b {
+      &:nth-child(1) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+    }
   }
 
   .logo {
-    width: 40px;
-    height: 33px;
+    width: 38px;
+    height: 31px;
     background-size: 100% auto;
     background-image: url(../images/logo.svg);
   }
 }
 
+#menu {
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  display: none;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: block;
+      padding: 10px 0;
+    }
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 20px;
+    color: #221E20;
+    letter-spacing: 0.82px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &.active,
+    &:hover {
+      border-color: #221E20;
+    }
+  }
+}
+
 #content {
   padding: 0 25px;
+  margin-top: 100px;
 
   .title {
     color: #F68484;
