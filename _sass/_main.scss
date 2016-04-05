@@ -182,4 +182,16 @@ body {
       }
     }
   }
+
+  code {
+    border-radius: 4px;
+    font-size: 16px;
+    background: #e5e5e5;
+    display: block;
+    color: #2B2B2B;
+    font-family: 'Inconsolata', sans-serif;
+    letter-spacing: 0.38px;
+    padding: 17px;
+    margin: 30px 0;
+  }
 }
