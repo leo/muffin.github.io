@@ -1,231 +1,52 @@
-html, body {
-  height: 100%;
-}
-
 body {
-  background: #fff;
+  background: #F1F1F1;
   margin: 0;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
 }
 
-::selection {
-  background: #69D2E7;
-  color: #fff;
-}
-
-::-moz-selection {
-  background: #69D2E7;
-  color: #fff;
-}
-
-#first {
-  color: #fff;
-  height: 100%;
-  -webkit-font-smoothing: antialiased;
+#controls {
+  background: #fff;
+  padding: 20px 25px;
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #633F3F;
-  padding: 0 20px;
 
-  figure {
-    margin: 0;
-    text-align: center;
-
-    @media (min-width: $sm) {
-      width: 400px;
-    }
-  }
-
-  svg {
-    width: 107px;
-    height: 93px;
-  }
-
-  aside {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    overflow: hidden;
-
-    a {
-      color: #fff;
-      text-decoration: none;
-      background: #5B3A3A;
-      font-size: 17px;
-      font-weight: 700;
-      padding: 16px 43px;
-      display: inline-block;
-
-      @media (min-width: $sm) {
-        transition: .3s ease;
-        color: #d5d5d5;
-
-        &:hover {
-          color: #fff;
-          padding-bottom: 25px;
-        }
-      }
-    }
-  }
-
-  figcaption {
-    font-size: 17px;
-    letter-spacing: 0.49px;
-    line-height: 26px;
-    margin-top: 35px;
-  }
-}
-
-#second {
-  color: #633F3F;
-  padding: 0 20px 40px;
-
-  code {
-    background-color: rgba(0, 0, 0, 0.04);
-    padding: 0.2em 0.6em;
-    font-size: 13px;
-    border-radius: 3px;
-  }
-
-  a {
-    color: rgba(0, 0, 0, 0.37);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 23px;
-    letter-spacing: 0.42px;
-
-    @media (min-width: $sm) {
-      font-size: 16px;
-      line-height: 28px;
-    }
-  }
-
-  hr {
-    border: 0;
-    border-bottom: 1px solid rgb(231, 231, 231);
-    margin: 50px auto;
-    width: 70%;
-  }
-
-  h2 {
-    margin-top: 40px;
-  }
-
-  .bookmark {
+  span {
+    width: 50%;
     display: block;
-    width: 45px;
-    height: 80px;
-    margin-bottom: 50px;
-    background: #633F3F url('../images/triangle-mobile.svg') no-repeat center bottom;
-  }
+    font-size: 0;
 
-  @media (min-width: $sm) {
-    width: 750px;
-    margin: auto;
-    padding-bottom: 80px;
-
-    h2 {
-      margin-top: 60px;
+    &:first-child {
+      text-align: left;
     }
 
-    h3 {
-      margin-top: 40px;
+    &:last-child {
+      text-align: right;
     }
   }
-}
-
-#third {
-  background: #fafafa;
-  padding: 70px 30px;
-  text-align: center;
 
   a {
-    text-decoration: none;
-    font-weight: 600;
-    color: inherit;
-
-    &:hover {
-      color: #686868;
-    }
+    display: inline-block;
   }
 
-  p {
-    color: #949494;
-    line-height: 28px;
-    margin-bottom: 26px;
-    margin-top: 0;
+  .toggle {
+    width: 30px;
+    vertical-align: -26px;
 
-    @media (min-width: $md) {
-      max-width: 570px;
-    }
-  }
-
-  iframe {
-    margin-bottom: -5px;
-    margin-left: 4px;
-    margin-right: 3px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-  }
-
-  .button-group {
-    margin-top: 50px;
-
-    a {
-      text-decoration: none;
-      background: #69D2E7;
-      padding: 15px 20px;
-      border-radius: 5px;
-      color: #fff;
-      margin-top: 15px;
-      font-weight: normal;
+    b {
+      width: inherit;
       display: block;
-      transition: background .4s;
+      height: 2px;
+      background: #221E20;
 
-      &:hover {
-        background: #9e9a9c;
-      }
-
-      &:last-child {
-        background: #ff9279;
-
-        &:hover {
-          background: #be6d5a;
-        }
+      &:nth-child(2) {
+        margin: 6px 0;
       }
     }
   }
 
-  @media (min-width: $sm) {
-    min-height: 60vh;
-    padding: 0 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .button-group a {
-      display: inline-block;
-      margin: 0 10px;
-    }
-  }
-
-  @media (min-width: $md) {
-    padding: 0;
-
-    main {
-      padding: 30px;
-      margin: 50px 0;
-    }
+  .logo {
+    width: 40px;
+    height: 33px;
+    background-size: 100% auto;
+    background-image: url(../images/logo.svg);
   }
 }
