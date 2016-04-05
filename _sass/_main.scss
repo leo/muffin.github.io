@@ -1,6 +1,9 @@
 body {
   background: #F1F1F1;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #696969;
+  font-size: 15px;
 }
 
 #controls {
@@ -48,5 +51,17 @@ body {
     height: 33px;
     background-size: 100% auto;
     background-image: url(../images/logo.svg);
+  }
+}
+
+#content {
+  padding: 0 25px;
+
+  .title {
+    color: #F68484;
+    font-size: 26px;
+    font-weight: 400;
+    border-bottom: 2px solid #F68484;
+    margin-right: -25px;
   }
 }
