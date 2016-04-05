@@ -31,7 +31,7 @@ body {
     box-shadow: none;
   }
 
-  span {
+  section {
     width: 50%;
     display: flex;
     font-size: 0;
@@ -49,6 +49,12 @@ body {
 
   a {
     display: inline-block;
+  }
+
+  span {
+    padding: 26px;
+    margin-right: -20px;
+    cursor: pointer;
   }
 
   .toggle {
@@ -72,6 +78,7 @@ body {
       &:nth-child(1) {
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
+        margin-bottom: -9px;
       }
 
       &:nth-child(2) {
@@ -81,6 +88,7 @@ body {
       &:nth-child(3) {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
+        margin-top: -7px;
       }
     }
   }
