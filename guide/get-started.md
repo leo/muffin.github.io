@@ -35,7 +35,7 @@ You'll then be asked to enter a few details about your site and the database con
 As soon as the setup is finished, use the following command to run a server for your site:
 
 ```
-muffin serve
+npm start
 ```
 
 ## To be continued...
