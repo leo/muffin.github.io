@@ -105,7 +105,9 @@ body {
   .logo {
     width: 38px;
     height: 31px;
-    background-size: 100% auto;
+    background-size: 99% auto;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url(../images/logo.svg);
   }
 }
