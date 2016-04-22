@@ -3,17 +3,19 @@ layout: default
 ---
 
 <header id="controls">
-  <section>
-    <a href="/" class="logo"></a>
-  </section>
+  <div class="inner">
+    <section>
+      <a href="/" class="logo"></a>
+    </section>
 
-  <section>
-    <span class="toggle">
-      <b></b>
-      <b></b>
-      <b></b>
-    </a>
-  </section>
+    <section>
+      <span class="toggle">
+        <b></b>
+        <b></b>
+        <b></b>
+      </a>
+    </section>
+  </div>
 </header>
 
 <aside id="menu">
@@ -41,14 +43,16 @@ layout: default
   </ul>
 </aside>
 
-<article id="content">
-  {% if page.path != "guide/index.md" %}
-    <h1 class="title"><a href="/guide">Guide</a> &rsaquo; {{page.title}}</h1>
-  {% else %}
-    <h1 class="title">
-      <a href="{{page.url}}">{{page.title}}</a>
-    </h1>
-  {% endif %}
+<main id="content">
+  <article>
+    {% if page.path != "guide/index.md" %}
+      <h1 class="title"><a href="/guide">Guide</a> &rsaquo; {{page.title}}</h1>
+    {% else %}
+      <h1 class="title">
+        <a href="{{page.url}}">{{page.title}}</a>
+      </h1>
+    {% endif %}
 
-  {{content}}
-</article>
+    {{content}}
+  </article>
+</main>
