@@ -11,7 +11,7 @@ As the first step, you need to make sure that the latest version of those things
 
 - [Node.js](https://nodejs.org)
 - [MongoDB](https://www.mongodb.org)
-- [Muffin](https://www.npmjs.com/package/muffin)
+- [Muffin's CLI](https://www.npmjs.com/package/muffin-cli)
 
 After installing all of the above dependencies, please make sure that your npm permissions are [fixed](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
 
@@ -25,7 +25,7 @@ On your local machine, the easiest way to start MongoDB is by running the follow
 mongod
 ```
 
-After that, simply use our neat Yeoman generator (which you've already installed previously) to generate a new boilerplate within the current directory:
+After that, simply use our neat command line interface (which you've already installed previously) to generate a new boilerplate within the current directory:
 
 ```
 muffin new
