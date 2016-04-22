@@ -50,7 +50,7 @@ layout: default
 </aside>
 
 <main id="content">
-  <article>
+  <aside>
     {% if page.path != "guide/index.md" %}
       <h1 class="title"><a href="/guide">Guide</a> &rsaquo; {{page.title}}</h1>
     {% else %}
@@ -58,7 +58,9 @@ layout: default
         <a href="{{page.url}}">{{page.title}}</a>
       </h1>
     {% endif %}
+  </aside>
 
+  <article>
     {{content}}
   </article>
 </main>
