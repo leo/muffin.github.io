@@ -124,6 +124,10 @@ body {
   align-items: center;
   overflow: hidden;
 
+  aside {
+    display: none;
+  }
+
   ul {
     list-style: none;
     padding: 0;
