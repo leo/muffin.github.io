@@ -22,20 +22,19 @@ layout: default
       <a href="/" class="active">Start</a>
     </li>
 
-    <li>
-      <a href="/">Guide</a>
-    </li>
+    {% for node in site.pages %}
+      {% unless node.url contains ".html" or node.url contains "assets" %}
+        <li>
+          <a href="{{node.url}}">{{node.title}}</a>
+        </li>
+      {% endunless%}
+    {% endfor %}
 
     <li>
-      <a href="/">API</a>
+      <a href="https://github.com/muffinjs" target="_blank">Contribute</a>
     </li>
-
     <li>
-      <a href="/">Contribute</a>
-    </li>
-
-    <li>
-      <a href="/">Bakery</a>
+      <a href="https://bakery.muffin.cafe" target="_blank">News</a>
     </li>
   </ul>
 </aside>
