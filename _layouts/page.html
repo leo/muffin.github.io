@@ -18,14 +18,16 @@ layout: default
 
 <aside id="menu">
   <ul>
-    <li>
-      <a href="/" class="active">Start</a>
-    </li>
-
     {% for node in site.pages %}
+      {% assign current = nil %}
+
+      {% if page.url == node.url %}
+        {% assign current = "active" %}
+      {% endif %}
+
       {% unless node.url contains ".html" or node.url contains "assets" %}
         <li>
-          <a href="{{node.url}}">{{node.title}}</a>
+          <a href="{{node.url}}" class="{{current}}">{{node.title}}</a>
         </li>
       {% endunless%}
     {% endfor %}
