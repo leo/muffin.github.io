@@ -130,6 +130,26 @@ body {
 
   aside {
     display: none;
+
+    @media (min-width: $md) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 100%;
+
+      a {
+        display: block;
+        background: url(../images/logo.svg) no-repeat center center;
+        background-size: 100% auto;
+        width: 85px;
+        height: 80px;
+
+        &:hover {
+          border: 0;
+        }
+      }
+    }
   }
 
   span {
@@ -208,6 +228,11 @@ body {
       margin-left: auto;
       margin-right: auto;
     }
+
+    @media (min-width: $md) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   p {
@@ -261,6 +286,6 @@ body {
   }
 
   @media (min-width: $md) {
-    padding-left: 230px;
+    padding-left: 275px;
   }
 }
