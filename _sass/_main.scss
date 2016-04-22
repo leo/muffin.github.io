@@ -108,6 +108,10 @@ body {
     background: url(../images/logo.svg) center no-repeat;
     background-size: 99% auto;
   }
+
+  @media (min-width: $md) {
+    display: none;
+  }
 }
 
 #menu {
@@ -125,6 +129,10 @@ body {
   overflow: hidden;
 
   aside {
+    display: none;
+  }
+
+  span {
     display: none;
   }
 
@@ -157,6 +165,12 @@ body {
     &:hover {
       border-color: #221E20;
     }
+  }
+
+  @media (min-width: $md) {
+    display: block;
+    right: auto;
+    width: 230px;
   }
 }
 
@@ -238,5 +252,9 @@ body {
 
   @media (min-width: $sm) {
     padding: 100px 0;
+  }
+
+  @media (min-width: $md) {
+    padding-left: 230px;
   }
 }
