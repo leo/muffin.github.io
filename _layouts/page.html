@@ -41,7 +41,13 @@ layout: default
 </aside>
 
 <article id="content">
-  <h1 class="title">Guide &rsaquo; {{page.title}}</h1>
+  {% if page.path != "guide/index.md" %}
+    <h1 class="title"><a href="/guide">Guide</a> &rsaquo; {{page.title}}</h1>
+  {% else %}
+    <h1 class="title">
+      <a href="{{page.url}}">{{page.title}}</a>
+    </h1>
+  {% endif %}
 
   {{content}}
 </article>
