@@ -136,6 +136,10 @@ body {
     li {
       display: block;
       padding: 10px 0;
+
+      @media (min-width: $sm) {
+        padding: 20px 0;
+      }
     }
   }
 
