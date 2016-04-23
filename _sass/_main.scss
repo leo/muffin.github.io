@@ -222,7 +222,8 @@ body {
   }
 
   @media (min-width: $md) {
-    display: block;
+    // Override jQuery's inline styling
+    display: block !important;
     right: auto;
     width: 230px;
     text-align: left;
