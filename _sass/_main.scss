@@ -3,6 +3,10 @@ html, body {
 
   &.no-overflow {
     overflow: hidden;
+
+    @media (min-width: $md) {
+      overflow: auto;
+    }
   }
 }
 
