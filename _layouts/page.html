@@ -66,8 +66,11 @@ layout: default
 
         {% unless node.url contains "assets" or slug == "/" %}
           {% if page.url contains node.url %}
-            {{node.title}}
-            {% unless node.title == page.title %}&rsaquo;{% endunless %}
+            <a href="{{node.url}}">{{node.title}}</a>
+
+            {% unless node.title == page.title %}
+              &rsaquo;
+            {% endunless %}
           {% endif %}
         {% else %}
           {% if node.url == page.url %}
