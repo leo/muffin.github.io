@@ -280,11 +280,15 @@ body {
     line-height: 25px;
   }
 
+  h2, h3, h4, h5, h6 {
+    color: #F68484;
+    font-weight: 500;
+    margin-top: 2em;
+  }
+
   h2 {
     font-size: 20px;
-    color: #F68484;
     letter-spacing: 0.35px;
-    font-weight: 500;
     margin-top: 40px;
 
     @media (min-width: $md) {

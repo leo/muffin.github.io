@@ -43,4 +43,4 @@ npm start
 
 That was all! 📢🐢
 
-Now we suggest you to learn more about the actual idea behind this project and how you can proceed with building your own site.
+Now we suggest you to [learn more](/guide/philosophy) about the actual idea behind this project and how you can proceed with building your own site.
