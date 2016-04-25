@@ -69,6 +69,10 @@ layout: default
             {{node.title}}
             {% unless node.title == page.title %}&rsaquo;{% endunless %}
           {% endif %}
+        {% else %}
+          {% if node.url == page.url %}
+            {{node.title}}
+          {% endif %}
         {% endunless %}
       {% endfor %}
     </h1>
