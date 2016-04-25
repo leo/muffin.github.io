@@ -3,4 +3,5 @@ layout: page
 title: Guide
 ---
 
-haha
+- [Get started](get-started)
+- [Philosophy](philosophy)
