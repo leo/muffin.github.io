@@ -22,13 +22,13 @@ If you want to set up a new site with muffin, please firstly make sure that your
 
 On your local machine, the easiest way to start MongoDB is by running the following command:
 
-{% hightlight bash %}
+{% highlight bash %}
 mongod
 {% endhighlight %}
 
 After that, simply use our neat command line interface (which you've already installed previously) to generate a new boilerplate within the current directory:
 
-{% hightlight bash %}
+{% highlight bash %}
 muffin new
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ You'll then be asked to enter a few details about your site and the database con
 
 As soon as the setup is finished, use the following command to run a server for your site:
 
-{% hightlight bash %}
+{% highlight bash %}
 npm start
 {% endhighlight %}
 
