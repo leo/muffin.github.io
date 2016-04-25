@@ -6,7 +6,7 @@ level: 1
 
 Muffin not only provides you with a neat workflow for building unique websites, but it also exposes all middleware directly to you, so that it doesn't require much work to fully customize how it runs on your server.
 
-When generating a new site using muffin's [CLI](https://www.npmjs.com/package/muffin-cli), you'll be presented a tiny example of how this works.
+When generating a new site using muffin's [CLI](https://www.npmjs.com/package/muffin-cli){:target="blank"}, you'll be presented a tiny example of how this works.
 
 ## Loading muffin
 
@@ -22,7 +22,7 @@ Next, you can assign all of the existing front-end routes to another constant, s
 const router = app.router
 {% endhighlight %}
 
-Since muffin uses [Koa](http://koajs.com) as web framework, there's a whole bunch of things you can do within those routes. To learn more about what exactly can be done within them and what you need to consider when adding more of them, make sure to read [this](http://koajs.com/#application).
+Since muffin uses [Koa](http://koajs.com){:target="blank"} as web framework, there's a whole bunch of things you can do within those routes. To learn more about what exactly can be done within them and what you need to consider when adding more of them, make sure to read [this](http://koajs.com/#application){:target="blank"}.
 
 As the next step, feel free to do whatever you want within those routes. You can load special kinds of data, pass it around or even override existing routes.
 
@@ -39,9 +39,9 @@ router.get('/', async(ctx, next) => {
 }))
 {% endhighlight %}
 
-But that's of course not the limit! As mentioned above, muffin is simply using [Koa](http://koajs.com) behind the curtains. Because of this, you can take advantage of the whole ecosystem that it has to offer.
+But that's of course not the limit! As mentioned above, muffin is simply using [Koa](http://koajs.com){:target="blank"} behind the curtains. Because of this, you can take advantage of the whole ecosystem that it has to offer.
 
-Not just in educational terms (you'll easier find answers to your questions on the web), but also when it comes to extending your existing middleware with [pre-built ones](https://github.com/koajs/koa/wiki). So go, make something awesome with those!
+Not just in educational terms (you'll easier find answers to your questions on the web), but also when it comes to extending your existing middleware with [pre-built ones](https://github.com/koajs/koa/wiki){:target="blank"}. So go, make something awesome with those!
 
 ## Telling muffin about the middleware
 
