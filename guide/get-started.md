@@ -4,7 +4,7 @@ title: Get started
 level: 2
 ---
 
-This section will explain you how to set up a new instance of Muffin on your own device. From there, you can then start building your own site even and deploying it.
+This section will explain you how to set up a new instance of muffin on your own device. From there, you can then start building your own site even and deploying it.
 
 ## Requirements
 
@@ -12,13 +12,13 @@ As the first step, you need to make sure that the latest version of those things
 
 - [Node.js](https://nodejs.org){:target="blank"}
 - [MongoDB](https://www.mongodb.org){:target="blank"}
-- [Muffin's CLI](https://www.npmjs.com/package/muffin-cli){:target="blank"}
+- [muffin's CLI](https://www.npmjs.com/package/muffin-cli){:target="blank"}
 
 After installing all of the above dependencies, please make sure that your npm permissions are [fixed](https://docs.npmjs.com/getting-started/fixing-npm-permissions){:target="blank"}.
 
 ## Usage
 
-If you want to set up a new site with Muffin, please firstly make sure that your database is running. This is required because the site generator will directly insert some sample data into it.
+If you want to set up a new site with muffin, please firstly make sure that your database is running. This is required because the site generator will directly insert some sample data into it.
 
 On your local machine, the easiest way to start MongoDB is by running the following command:
 

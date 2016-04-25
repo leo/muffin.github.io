@@ -8,25 +8,25 @@ This page explains the core concepts behind muffin. Besides of that, it also ser
 
 ## So... what's this about?
 
-Easy: Muffin takes the essence of the brilliant idea that brought us content management systems like WordPress, Kirby, Typo3 and Drupal and merges it with the latest technologies and tools that the web has to offer today.
+Easy: muffin takes the essence of the brilliant idea that brought us content management systems like WordPress, Kirby, Typo3 and Drupal and merges it with the latest technologies and tools that the web has to offer today.
 
 The current market in this area is far from perfect. People keep struggling with spaghetti code, quirky build & deployment workflows, cluttered dashboards, weird caching mechanisms and uncompressed contents.
 
-Muffin solves all of this by taking advantage of the thriving ecosystem JavaScript and Node.js currently have to offer:
+muffin solves all of this by taking advantage of the thriving ecosystem JavaScript and Node.js currently have to offer:
 
 ## JavaScript
 
-Since Muffin is written in pure JavaScript (using Ember.js) and run on Node.js, you’ll also finally be able to take advantage of a much faster content delivery, build tools like Grunt & Gulp and all other packages available within the JavaScript universe.
+Since muffin is written in pure JavaScript (using Ember.js) and run on Node.js, you’ll also finally be able to take advantage of a much faster content delivery, build tools like Grunt & Gulp and all other packages available within the JavaScript universe.
 
 ### Hello, flat directory structures!
 
-This also has many other advantages: For example, Muffin acts as a simple module that will be part of your site's dependencies. This basically means that your template files will be located in the root directory. So all in all, you won't have to dig 10 folders deep into your folder structure anymore, just to reach it (or your plugins).
+This also has many other advantages: For example, muffin acts as a simple module that will be part of your site's dependencies. This basically means that your template files will be located in the root directory. So all in all, you won't have to dig 10 folders deep into your folder structure anymore, just to reach it (or your plugins).
 
 ### Built-in webserver
 
-Another great thing that comes with the use of the Muffin is the abilitiy to finally say "goodbye" to `php.ini`, `.htaccess` and differently configured webserver setups. Muffin comes with its own JS webserver built-in, so there's no need to waste your time endlessly configuring upload limits, max. execution times, webserver modules or stupid RewriteRules.
+Another great thing that comes with the use of the muffin is the abilitiy to finally say "goodbye" to `php.ini`, `.htaccess` and differently configured webserver setups. muffin comes with its own JS webserver built-in, so there's no need to waste your time endlessly configuring upload limits, max. execution times, webserver modules or stupid RewriteRules.
 
-You also don't need to install things like `mod_deflate.c` or `mod_expires.c` and then setup quirky `.htaccess` rules, just to compress your responses or to set the correct expiration date for certain media files. Muffin already internally handles all of this stuff for you. Just lean back and focus on writing a great website!
+You also don't need to install things like `mod_deflate.c` or `mod_expires.c` and then setup quirky `.htaccess` rules, just to compress your responses or to set the correct expiration date for certain media files. muffin already internally handles all of this stuff for you. Just lean back and focus on writing a great website!
 
 ## Document-oriented database
 
@@ -38,7 +38,7 @@ Since all data is already structured in BSON objects (basically binary-encoded J
 
 Do you remember the times when you had to make sure that all folder and file permissions are configured correctly, just to make sure your media files are stored?
 
-Forget that! Muffin uses [GridFS](https://docs.mongodb.org/manual/core/gridfs/){:target="blank"} to split all of your uploaded files into small 255 kB chunks and save them to the DB (not the code, of course). When a request for a file comes in, the chunks will be taken from the DB and then [streamed](http://maxogden.com/node-streams.html){:target="blank"} directly to the response.
+Forget that! muffin uses [GridFS](https://docs.mongodb.org/manual/core/gridfs/){:target="blank"} to split all of your uploaded files into small 255 kB chunks and save them to the DB (not the code, of course). When a request for a file comes in, the chunks will be taken from the DB and then [streamed](http://maxogden.com/node-streams.html){:target="blank"} directly to the response.
 
 A nice side-effect of this whole feature is that you don't need to download an "uploads" folder or such stuff when setting up your local development environment. **Just copy the DB!**
 
