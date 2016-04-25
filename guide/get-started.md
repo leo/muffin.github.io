@@ -9,11 +9,11 @@ This section will explain you how to set up a new instance of Muffin on your own
 
 As the first step, you need to make sure that the latest version of those things is installed on your computer:
 
-- [Node.js](https://nodejs.org)
-- [MongoDB](https://www.mongodb.org)
-- [Muffin's CLI](https://www.npmjs.com/package/muffin-cli)
+- [Node.js](https://nodejs.org){:target="blank"}
+- [MongoDB](https://www.mongodb.org){:target="blank"}
+- [Muffin's CLI](https://www.npmjs.com/package/muffin-cli){:target="blank"}
 
-After installing all of the above dependencies, please make sure that your npm permissions are [fixed](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
+After installing all of the above dependencies, please make sure that your npm permissions are [fixed](https://docs.npmjs.com/getting-started/fixing-npm-permissions){:target="blank"}.
 
 ## Usage
 
