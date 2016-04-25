@@ -238,6 +238,10 @@ body {
 #content {
   padding: 80px 25px;
 
+  .highlight {
+    margin: 30px 0;
+  }
+
   .title {
     color: #F68484;
     font-size: 26px;
@@ -339,7 +343,6 @@ body {
   pre {
     background: #e5e5e5;
     display: block;
-    margin: 30px 0;
     padding: 17px;
     font-size: 16px;
     border-radius: 4px;
