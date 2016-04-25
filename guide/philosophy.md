@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Philosophy
+level: 2
 ---
 
 This page explains the core concepts behind muffin. Besides of that, it also serves as some kind FAQ sheet to answer some of the questions most developers often wonder about when using it.

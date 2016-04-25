@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Get started
+level: 2
 ---
 
 This section will explain you how to set up a new instance of Muffin on your own device. From there, you can then start building your own site even and deploying it.

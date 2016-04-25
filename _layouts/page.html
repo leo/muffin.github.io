@@ -57,13 +57,21 @@ layout: default
 
 <main id="content">
   <aside>
-    {% if page.path != "guide/index.md" %}
-      <h1 class="title"><a href="/guide">Guide</a> &rsaquo; {{page.title}}</h1>
-    {% else %}
-      <h1 class="title">
-        <a href="{{page.url}}">{{page.title}}</a>
-      </h1>
-    {% endif %}
+    <h1 class="title">
+      {% assign crumbs = site.pages | sort: "level"  %}
+
+      {% for node in crumbs %}
+        {% assign slug = node.path | replace: ".md", "" | replace: ".html", "" %}
+        {% assign slug = slug | replace: "/index", "/" | replace: "index", "/" %}
+
+        {% unless node.url contains "assets" or slug == "/" %}
+          {% if page.url contains node.url %}
+            {{node.title}}
+            {% unless node.title == page.title %}&rsaquo;{% endunless %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </h1>
   </aside>
 
   <article>
