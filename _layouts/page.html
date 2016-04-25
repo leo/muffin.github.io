@@ -27,8 +27,14 @@ layout: default
     {% for node in site.pages %}
       {% assign current = nil %}
 
-      {% if page.url == node.url %}
-        {% assign current = "active" %}
+      {% if node.url == '/' %}
+        {% if page.url == node.url %}
+          {% assign current = "active" %}
+        {% endif %}
+      {% else %}
+        {% if page.url == node.url or page.url contains node.url %}
+          {% assign current = "active" %}
+        {% endif %}
       {% endif %}
 
       {% unless node.url contains ".html" or node.url contains "assets" %}
