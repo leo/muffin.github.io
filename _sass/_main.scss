@@ -425,13 +425,12 @@ body {
     @media (min-width: 992px) {
       transform: translateX(25%);
       display: block;
-      margin: 0;
       width: 607px;
       height: 353px;
       overflow: hidden;
       position: relative;
 
-      figcaption {
+      span {
         height: 100%;
         width: 100%;
         background: url('../images/macbook.svg') no-repeat left top;
