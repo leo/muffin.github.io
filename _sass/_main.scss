@@ -91,6 +91,7 @@ body {
     .no-overflow & b {
       &:nth-child(1) {
         transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
         margin-bottom: -9px;
       }
@@ -101,6 +102,7 @@ body {
 
       &:nth-child(3) {
         transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         margin-top: -7px;
       }
@@ -150,11 +152,15 @@ body {
         width: 85px;
         height: 80px;
         transform: scale(1);
+        -ms-transform: scale(1.08);
+        -webkit-transform: scale(1.08);
         transition: transform 0.4s;
         border: 0;
 
         &:hover {
           transform: scale(1.08);
+          -webkit-transform: scale(1.08);
+          -ms-transform: scale(1.08);
         }
       }
     }
@@ -442,6 +448,12 @@ body {
         margin-top: 29px;
         height: 280px;
       }
+    }
+
+    @media (min-width: 1200px) {
+      -webkit-transform: cale(1.2) translateX(25%);
+      -ms-transform: cale(1.2) translateX(25%);
+      transform: scale(1.2) translateX(25%);
     }
   }
 
