@@ -417,6 +417,7 @@ body {
     display: none;
 
     @media (min-width: 992px) {
+      transform: translateX(25%);
       display: block;
       margin: 0;
       width: 607px;
@@ -434,6 +435,12 @@ body {
         left: 0;
         top: 0;
         display: block;
+      }
+
+      img {
+        margin-left: 70px;
+        margin-top: 29px;
+        height: 280px;
       }
     }
   }
