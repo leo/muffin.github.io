@@ -249,6 +249,11 @@ body {
     padding: 70px 0 0 0;
     height: 100%;
     box-sizing: border-box;
+
+    @media (min-width: 992px) {
+      padding-top: 0;
+      padding-left: 230px;
+    }
   }
 
   .highlight {
@@ -398,10 +403,28 @@ body {
   aside:first-child {
     display: table-cell;
     vertical-align: middle;
+
+    @media (min-width: 992px) {
+      display: flex;
+      height: 100vh;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
-  .macbook {
+  .unslider {
     display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+      width: 430px;
+
+      ul {
+        li:before {
+          display: none;
+        }
+      }
+    }
   }
 
   .description {
@@ -435,6 +458,21 @@ body {
       padding-left: 0;
       padding-right: 0;
     }
+
+    @media (min-width: 992px) {
+      padding-left: 80px;
+      box-sizing: border-box;
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 16px;
+        max-width: 400px;
+      }
+    }
   }
 
   .more {
@@ -458,5 +496,9 @@ body {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: 992px) {
+    width: 100%;
   }
 }
