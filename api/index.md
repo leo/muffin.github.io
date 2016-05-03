@@ -2,6 +2,7 @@
 layout: page
 title: API
 level: 1
+index: 3
 ---
 
 Muffin not only provides you with a neat workflow for building unique websites, but it also exposes all middleware directly to you, so that it doesn't require much work to fully customize how it runs on your server.

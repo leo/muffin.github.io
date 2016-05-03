@@ -24,7 +24,9 @@ layout: default
   </aside>
 
   <ul>
-    {% for node in site.pages %}
+    {% assign sorted_pages = (site.pages | sort: "index") %}
+
+    {% for node in sorted_pages %}
       {% assign current = nil %}
 
       {% if node.url == '/' %}

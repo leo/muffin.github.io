@@ -2,6 +2,7 @@
 layout: page
 title: Guide
 level: 1
+index: 2
 ---
 
 ## Building sites
