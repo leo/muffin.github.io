@@ -9,4 +9,10 @@ $(document).ready(function () {
     $('html').toggleClass('no-overflow')
     $('#menu').fadeToggle(200).css('display','flex')
   })
+
+  $('.macbook').unslider({
+    autoplay: true,
+    arrows: false,
+    nav: false
+  })
 })

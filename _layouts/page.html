@@ -55,7 +55,12 @@ layout: default
   <span>Made by <a href="http://leo.im" target="_blank">Leo</a></span>
 </aside>
 
-<main id="content">
+{% if page.url == '/' %}
+  <main id="content" class="start">
+{% else %}
+  <main id="content">
+{% endif %}
+
   {% unless page.url == '/' %}
     <aside>
       <h1 class="title">
@@ -88,7 +93,7 @@ layout: default
   {% endunless %}
 
   {% if page.url == '/' %}
-    <section>{{content}}</section>
+    {{content}}
   {% else %}
     <article>{{content}}</article>
   {% endif %}
