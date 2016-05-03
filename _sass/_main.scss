@@ -482,6 +482,11 @@ body {
       margin-top: 5px;
       display: inline-block;
       padding: 8px 25px;
+      transition: background 0.2s;
+
+      &:hover {
+        background: #90a5e4;
+      }
     }
 
     @media (min-width: 768px) {
@@ -518,7 +523,17 @@ body {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       color: #AFAFAF;
-      padding: 15px 35px
+      padding: 15px 35px;
+
+      @media (min-width: 992px) {
+        padding: 10px 40px;
+        transition: all 0.3s;
+
+        &:hover {
+          padding-bottom: 17px;
+          color: #888888;
+        }
+      }
     }
   }
 
