@@ -150,9 +150,12 @@ body {
         background-size: 100% auto;
         width: 85px;
         height: 80px;
+        transform: scale(1);
+        transition: transform 0.4s;
+        border: 0;
 
         &:hover {
-          border: 0;
+          transform: scale(1.08);
         }
       }
     }
