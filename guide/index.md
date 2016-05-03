@@ -12,4 +12,5 @@ level: 1
 
 ## Project
 
+- [Contribute](contribute)
 - [Branding](branding)
