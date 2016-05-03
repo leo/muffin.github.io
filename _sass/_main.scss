@@ -257,6 +257,7 @@ body {
     box-sizing: border-box;
 
     @media (min-width: 992px) {
+      overflow: hidden;
       padding-top: 0;
       padding-left: 230px;
     }
