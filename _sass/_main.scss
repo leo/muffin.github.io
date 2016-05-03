@@ -180,6 +180,10 @@ body {
           color: #c8c8c8;
         }
       }
+
+      @media (max-height: 480px) {
+        display: none;
+      }
     }
   }
 
