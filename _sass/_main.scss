@@ -395,14 +395,17 @@ body {
   position: relative;
   width: 100%;
 
+  aside:first-child {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
   .macbook {
     display: none;
   }
 
   .description {
     padding: 0 25px;
-    display: table-cell;
-    vertical-align: middle;
 
     h1 {
       color: #000;
