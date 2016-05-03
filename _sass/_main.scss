@@ -393,6 +393,7 @@ body {
   display: table;
   height: 100%;
   position: relative;
+  width: 100%;
 
   .macbook {
     display: none;
@@ -414,6 +415,7 @@ body {
     p {
       color: #868686;
       margin-top: 0;
+      max-width: 500px;
       font-size: 15px;
     }
 
@@ -424,6 +426,11 @@ body {
       margin-top: 5px;
       display: inline-block;
       padding: 8px 25px;
+    }
+
+    @media (min-width: 768px) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -442,5 +449,11 @@ body {
       color: #AFAFAF;
       padding: 15px 35px
     }
+  }
+
+  @media (min-width: 768px) {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
