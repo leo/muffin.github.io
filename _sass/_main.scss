@@ -16,7 +16,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #696969;
   font-size: 15px;
-  -webkit-text-size-adjust: 90%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -415,6 +414,7 @@ body {
     p {
       color: #868686;
       margin-top: 0;
+      font-size: 15px;
     }
 
     a {
