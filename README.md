@@ -16,5 +16,5 @@ gem install jekyll github-pages
 Run Jekyll! :dizzy:
 
 ```sh
-jekyll serve --watch
+jekyll -w serve
 ```
