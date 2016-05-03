@@ -87,7 +87,9 @@ layout: default
     </aside>
   {% endunless %}
 
-  <article>
-    {{content}}
-  </article>
+  {% if page.url == '/' %}
+    <section>{{content}}</section>
+  {% else %}
+    <article>{{content}}</article>
+  {% endif %}
 </main>
