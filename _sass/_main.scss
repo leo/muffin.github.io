@@ -424,11 +424,14 @@ body {
 
     @media (min-width: 992px) {
       transform: translateX(25%);
+      -webkit-transform: translateX(25%);
+      -ms-transform: translateX(25%);
       display: block;
       width: 607px;
       height: 353px;
       overflow: hidden;
       position: relative;
+      transition: all .3s;
 
       span {
         height: 100%;
@@ -446,6 +449,10 @@ body {
         margin-left: 70px;
         margin-top: 29px;
         height: 280px;
+      }
+
+      &:hover {
+        opacity: .8;
       }
     }
 
