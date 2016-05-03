@@ -56,34 +56,36 @@ layout: default
 </aside>
 
 <main id="content">
-  <aside>
-    <h1 class="title">
-      {% assign crumbs = site.pages | sort: "level"  %}
+  {% unless page.url == '/' %}
+    <aside>
+      <h1 class="title">
+        {% assign crumbs = site.pages | sort: "level"  %}
 
-      {% for node in crumbs %}
-        {% assign slug = node.path | replace: ".md", "" | replace: ".html", "" %}
-        {% assign slug = slug | replace: "/index", "/" | replace: "index", "/" %}
+        {% for node in crumbs %}
+          {% assign slug = node.path | replace: ".md", "" | replace: ".html", "" %}
+          {% assign slug = slug | replace: "/index", "/" | replace: "index", "/" %}
 
-        {% unless node.url contains "assets" or slug == "/" %}
-          {% if page.url contains node.url %}
+          {% unless node.url contains "assets" or slug == "/" %}
+            {% if page.url contains node.url %}
+              {% if node.url == page.url %}
+                {{node.title}}
+              {% else %}
+                <a href="{{node.url}}">{{node.title}}</a>
+              {% endif %}
+
+              {% unless node.title == page.title %}
+                &rsaquo;
+              {% endunless %}
+            {% endif %}
+          {% else %}
             {% if node.url == page.url %}
               {{node.title}}
-            {% else %}
-              <a href="{{node.url}}">{{node.title}}</a>
             {% endif %}
-
-            {% unless node.title == page.title %}
-              &rsaquo;
-            {% endunless %}
-          {% endif %}
-        {% else %}
-          {% if node.url == page.url %}
-            {{node.title}}
-          {% endif %}
-        {% endunless %}
-      {% endfor %}
-    </h1>
-  </aside>
+          {% endunless %}
+        {% endfor %}
+      </h1>
+    </aside>
+  {% endunless %}
 
   <article>
     {{content}}
