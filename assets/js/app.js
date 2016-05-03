@@ -13,6 +13,7 @@ $(document).ready(function () {
   $('.macbook').unslider({
     autoplay: true,
     arrows: false,
-    nav: false
+    nav: false,
+    animation: 'fade'
   })
 })

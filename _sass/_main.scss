@@ -405,6 +405,7 @@ body {
     vertical-align: middle;
 
     @media (min-width: 992px) {
+      overflow: hidden;
       display: flex;
       height: 100vh;
       justify-content: space-between;
@@ -419,7 +420,32 @@ body {
       display: block;
       width: 430px;
 
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url('../images/notebook.svg') no-repeat left top;
+        background-size: 607px 353px;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .macbook {
+        margin-left: 18%;
+        margin-top: 6.3%
+      }
+
       ul {
+        height: 300px;
+
+        li {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
         li:before {
           display: none;
         }
@@ -500,5 +526,6 @@ body {
 
   @media (min-width: 992px) {
     width: 100%;
+    overflow: hidden;
   }
 }
