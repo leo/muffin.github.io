@@ -2,6 +2,8 @@
 
 This is where you can find muffin's documentation.
 
+![Imgur](http://i.imgur.com/W3VZGtd.png)
+
 ## Caught a bug?
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
