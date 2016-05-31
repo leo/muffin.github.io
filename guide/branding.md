@@ -16,6 +16,6 @@ Although there aren't many things to consider, they really help us a lot to main
 
 ## Logo
 
-If you'd like to include muffin's logo in a certain project if yours, you can download the asset file [here](https://github.com/muffinjs/branding).
+If you'd like to include muffin's logo in a certain project if yours, you can download the asset file [here](https://github.com/muffin/branding).
 
 Currently, there are no special guidelines for how the logo should be displayed. So feel free to do whatever you want with it!

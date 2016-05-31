@@ -8,7 +8,7 @@ Muffin itself is nothing more than a module that can be required within your web
 
 However, we only want this to be a great argument for choosing muffin when it comes to building an app for which there's simply no other way than using a custom set of tools.
 
-So when building a regular website, it's strongly recommended to do this using our neat [command line interface](https://github.com/muffinjs/cli){:target="blank"}. Using npm, you only need to run a single command to install it on your local device.
+So when building a regular website, it's strongly recommended to do this using our neat [command line interface](https://github.com/muffin/cli){:target="blank"}. Using npm, you only need to run a single command to install it on your local device.
 
 But before doing so, please [fix your npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions). This basically ensures that you don't need to prepend `sudo` when globally installing things through npm. After you're done, install the CLI:
 
